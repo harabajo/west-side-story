@@ -1,8 +1,11 @@
 <div class="header-container">
-  <img src="/assets/img/wss.png" class="icon-image" />
-  <nav>
+  <div class="navigation">
     <div class="title-container" [routerLink]="'/home'">
-        <span class="bold title" >עמוד הבית</span>
+      <span class="title" [class]="{bold: currentRoute == '/home'}">עמוד הבית</span>
     </div>
-  </nav>
+    <div class="title-container" [routerLink]="'/Schedule'">
+      <span class="title" [class]="{bold: currentRoute == '/Schedule'}">לוח זמנים</span>
+    </div>
+  </div>
+  <img src="/assets/img/wss.png" class="icon-image" [routerLink]="'/home'" />
 </div>

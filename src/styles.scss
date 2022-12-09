@@ -1,59 +1,73 @@
 /* You can add global styles to this file, and also import other style files */
 
 @font-face {
-    font-family: "Heebo-Black";
-    src: local("Heebo-Black"), url(./assets/fonts/Heebo/Heebo-Black.ttf) format("truetype");
+  font-family: "Heebo-Black";
+  src: local("Heebo-Black"),
+    url(./assets/fonts/Heebo/Heebo-Black.ttf) format("truetype");
 }
 
 @font-face {
-    font-family: "Heebo-Bold";
-    src: local("Heebo-Bold"), url(./assets/fonts/Heebo/Heebo-Bold.ttf) format("truetype");
+  font-family: "Heebo-Bold";
+  src: local("Heebo-Bold"),
+    url(./assets/fonts/Heebo/Heebo-Bold.ttf) format("truetype");
 }
 
 @font-face {
-    font-family: "Heebo-ExtraBold";
-    src: local("Heebo-ExtraBold"), url(./assets/fonts/Heebo/Heebo-ExtraBold.ttf) format("truetype");
+  font-family: "Heebo-ExtraBold";
+  src: local("Heebo-ExtraBold"),
+    url(./assets/fonts/Heebo/Heebo-ExtraBold.ttf) format("truetype");
 }
 
 @font-face {
-    font-family: "Heebo-ExtraLight";
-    src: local("Heebo-ExtraLight"), url(./assets/fonts/Heebo/Heebo-ExtraLight.ttf) format("truetype");
+  font-family: "Heebo-ExtraLight";
+  src: local("Heebo-ExtraLight"),
+    url(./assets/fonts/Heebo/Heebo-ExtraLight.ttf) format("truetype");
 }
 
 @font-face {
-    font-family: "Heebo-Light";
-    src: local("Heebo-Light"), url(./assets/fonts/Heebo/Heebo-Light.ttf) format("truetype");
+  font-family: "Heebo-Light";
+  src: local("Heebo-Light"),
+    url(./assets/fonts/Heebo/Heebo-Light.ttf) format("truetype");
 }
 
 @font-face {
-    font-family: "Heebo-Medium";
-    src: local("Heebo-Medium"), url(./assets/fonts/Heebo/Heebo-Medium.ttf) format("truetype");
+  font-family: "Heebo-Medium";
+  src: local("Heebo-Medium"),
+    url(./assets/fonts/Heebo/Heebo-Medium.ttf) format("truetype");
 }
 
 @font-face {
-    font-family: "Heebo-SemiBold";
-    src: local("Heebo-SemiBold"), url(./assets/fonts/Heebo/Heebo-SemiBold.ttf) format("truetype");
+  font-family: "Heebo-SemiBold";
+  src: local("Heebo-SemiBold"),
+    url(./assets/fonts/Heebo/Heebo-SemiBold.ttf) format("truetype");
 }
 
 @font-face {
-    font-family: "Heebo-Thin";
-    src: local("Heebo-Thin"), url(./assets/fonts/Heebo/Heebo-Thin.ttf) format("truetype");
+  font-family: "Heebo-Thin";
+  src: local("Heebo-Thin"),
+    url(./assets/fonts/Heebo/Heebo-Thin.ttf) format("truetype");
 }
 
 @font-face {
-    font-family: "Heebo-Regular";
-    src: local("Heebo-Regular"), url(./assets/fonts/Heebo/Heebo-Regular.ttf) format("truetype");
+  font-family: "Heebo-Regular";
+  src: local("Heebo-Regular"),
+    url(./assets/fonts/Heebo/Heebo-Regular.ttf) format("truetype");
 }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: "Heebo-Regular" , Roboto, "Helvetica Neue", sans-serif; }
-
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: "Heebo-Regular", Roboto, "Helvetica Neue", sans-serif;
+  direction: rtl;
+}
 
 .bold {
-    font-family: "Heebo-Bold", Roboto, "Helvetica Neue", sans-serif; 
+  font-family: "Heebo-Bold", Roboto, "Helvetica Neue", sans-serif;
 }
 
 .medium {
-    font-family: "Heebo-Medium", Roboto, "Helvetica Neue", sans-serif; 
-
+  font-family: "Heebo-Medium", Roboto, "Helvetica Neue", sans-serif;
 }
