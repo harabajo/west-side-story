@@ -2,6 +2,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 import { filter } from 'rxjs';
+import { AuthService } from 'src/app/share/services/auth.service';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -11,7 +12,7 @@ export class HeaderComponent implements OnInit {
 
   currentRoute!: string;
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, private authService: AuthService) { }
 
   ngOnInit() {
     this.router.events.pipe(filter((event: any) => event instanceof NavigationEnd)).subscribe((event: { url: string; }) => {
@@ -20,9 +21,7 @@ export class HeaderComponent implements OnInit {
   }
 
   fireLogin() {
-    // getAuth
-    console.log('login');
-
+    this.authService.loginUser()
   }
 }
 

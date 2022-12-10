@@ -1,5 +1,6 @@
 <div class="header-container">
   <div class="navigation">
+    <img src="/assets/img/wss.png" class="icon-image" [routerLink]="'/home'" />
     <div class="title-container" [routerLink]="'/home'">
       <span class="title" [class]="{bold: currentRoute == '/home'}">עמוד הבית</span>
     </div>
@@ -11,6 +12,5 @@
     <div class="auth">
       <button mat-raised-button color="accent" class="auth-button" (click)="fireLogin()">login</button>
     </div>
-    <img src="/assets/img/wss.png" class="icon-image" [routerLink]="'/home'" />
   </div>
 </div>
