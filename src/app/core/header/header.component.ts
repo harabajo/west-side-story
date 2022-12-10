@@ -1,3 +1,4 @@
+// import {  } from '@angular/fire/auth';
 import { Component, OnInit } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 import { filter } from 'rxjs';
@@ -10,12 +11,18 @@ export class HeaderComponent implements OnInit {
 
   currentRoute!: string;
 
-  constructor(private router: Router,) { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
     this.router.events.pipe(filter((event: any) => event instanceof NavigationEnd)).subscribe((event: { url: string; }) => {
       this.currentRoute = event.url;
     });
+  }
+
+  fireLogin() {
+    // getAuth
+    console.log('login');
+
   }
 }
 

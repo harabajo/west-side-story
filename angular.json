@@ -99,6 +99,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "west-side-story:build:production",
+            "firebaseProject": "west-side-story-cdc91",
+            "firebaseHostingSite": "west-side-story-cdc91"
+          }
         }
       }
     }

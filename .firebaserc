@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "west-side-story-cdc91": {
+      "hosting": {
+        "west-side-story": [
+          "west-side-story-cdc91"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "west-side-story-cdc91"
+  }
+}

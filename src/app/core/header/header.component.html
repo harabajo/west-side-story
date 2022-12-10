@@ -7,5 +7,10 @@
       <span class="title" [class]="{bold: currentRoute == '/Schedule'}">לוח זמנים</span>
     </div>
   </div>
-  <img src="/assets/img/wss.png" class="icon-image" [routerLink]="'/home'" />
+  <div class="userSide-container">
+    <div class="auth">
+      <button mat-raised-button color="accent" class="auth-button" (click)="fireLogin()">login</button>
+    </div>
+    <img src="/assets/img/wss.png" class="icon-image" [routerLink]="'/home'" />
+  </div>
 </div>
