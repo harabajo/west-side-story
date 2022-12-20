@@ -10,7 +10,11 @@
   </div>
   <div class="userSide-container">
     <div class="auth">
-      <button mat-raised-button color="accent" class="auth-button" (click)="fireLogin()">login</button>
+      <button *ngIf="!auth.currentUser" mat-raised-button color="accent" class="auth-button" (click)="fireLogin()">הכנס/י</button>
+      <button *ngIf="auth.currentUser" mat-raised-button color="accent" class="auth-button" (click)="fireSignOut()">התנתק/י</button>
+    </div>
+    <div class="user" *ngIf="auth.currentUser">
+      <img [src]="auth.currentUser.photoURL" alt="תמונת פרופיל" class="profile-photo" referrerpolicy="no-referrer">
     </div>
   </div>
 </div>
