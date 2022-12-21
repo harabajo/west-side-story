@@ -1,0 +1,14 @@
+<div class="creat-admin-note-container">
+  <div class="creat-section">
+    <mat-form-field appearance="fill">
+      <mat-label>כותרת ההודעה</mat-label>
+      <input matInput [(ngModel)]="sue">
+    </mat-form-field>
+  </div>
+  <div class="buttons-section">
+    <div class="buttons-container">
+      <button mat-button (click)="close()" class="close-button">סגור</button>
+      <button mat-flat-button (click)="save()" color="primary">שמור</button>
+    </div>
+  </div>
+</div>

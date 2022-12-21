@@ -26,7 +26,7 @@ export class HeaderComponent implements OnInit {
       this.currentRoute = event.url;
       setTimeout(() =>
           this.router.navigateByUrl(this.currentRoute)
-        , 500)
+        , 300)
     });
   }
 

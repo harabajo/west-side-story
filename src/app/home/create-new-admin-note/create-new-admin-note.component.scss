@@ -1,0 +1,23 @@
+.creat-admin-note-container {
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 203, 203, 0.53);
+  display: flex;
+  flex-direction: column;
+}
+
+.creat-section {
+  flex: 5;
+}
+
+.buttons-section {
+  flex: 0.3;
+}
+
+.buttons-container {
+  margin-left: 12px;
+}
+
+.close-button {
+  margin-right: 6px;
+}

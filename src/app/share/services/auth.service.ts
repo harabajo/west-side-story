@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { setPersistence } from '@firebase/auth'
-import { Auth, signInWithPopup, GoogleAuthProvider, browserLocalPersistence } from '@angular/fire/auth';
+import { Auth, signInWithPopup, GoogleAuthProvider, browserSessionPersistence } from '@angular/fire/auth';
 
 @Injectable({
   providedIn: 'root'
@@ -15,7 +15,7 @@ export class AuthService {
 
   async loginUser() {
     try {
-      await setPersistence(this.auth, browserLocalPersistence)
+      await setPersistence(this.auth, browserSessionPersistence)
       await signInWithPopup(this.auth, this.provider);
 
 
