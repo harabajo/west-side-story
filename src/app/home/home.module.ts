@@ -23,9 +23,9 @@ import {MatInputModule} from "@angular/material/input";
     MatButtonToggleModule,
     MatButtonModule,
     MatDialogModule,
-    ReactiveFormsModule,
     MatInputModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   exports: [
     HomePageComponent

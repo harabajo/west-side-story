@@ -14,8 +14,8 @@ export class HomePageComponent {
 
   openCreatNewAdminNote(): void {
     const dialogRef = this.dialog.open(CreateNewAdminNoteComponent, {
-      height: '800px',
-      width: '600px',
+      height: '600px',
+      width: '400px',
     });
     dialogRef.afterClosed().subscribe(val => {
       console.log(val)

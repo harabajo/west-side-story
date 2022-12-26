@@ -1,13 +1,27 @@
+textarea {
+  resize: none;
+}
+
+
+
+
 .creat-admin-note-container {
   width: 100%;
   height: 100%;
   background: rgba(255, 203, 203, 0.53);
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .creat-section {
-  flex: 5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 3;
+  margin-top: 12px;
 }
 
 .buttons-section {
@@ -20,4 +34,17 @@
 
 .close-button {
   margin-right: 6px;
+}
+
+.text-area {
+  height: 400px;
+}
+
+.title {
+  margin-top: 12px;
+  font-size: 24px;
+}
+
+.title-of-massage {
+  width: 120% !important;
 }

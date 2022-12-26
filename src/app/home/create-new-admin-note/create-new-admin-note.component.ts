@@ -1,6 +1,7 @@
-import {Component} from '@angular/core';
-import {Firestore} from '@angular/fire/firestore';
+import {Component, OnInit} from '@angular/core';
+import {collection, Firestore, addDoc} from '@angular/fire/firestore';
 import {MatDialogRef} from "@angular/material/dialog";
+import {FormControl, FormGroup, Validators} from "@angular/forms";
 
 
 @Component({
@@ -8,20 +9,30 @@ import {MatDialogRef} from "@angular/material/dialog";
   templateUrl: './create-new-admin-note.component.html',
   styleUrls: ['./create-new-admin-note.component.scss']
 })
-export class CreateNewAdminNoteComponent {
+export class CreateNewAdminNoteComponent implements OnInit{
 
   constructor(
-    private firebase: Firestore,
+    private firestore: Firestore,
     private dialogRef: MatDialogRef<CreateNewAdminNoteComponent>,
   ) {
   }
 
-  sue!: string
-  close() {
-    this.dialogRef.close(true);
+  colRef = collection(this.firestore,'adminNote')
+  fg = new FormGroup({
+    title: new FormControl(null,[Validators.required]),
+    message: new FormControl(null,[Validators.required]),
+
+  })
+
+  ngOnInit() {
   }
 
-  save() {
+  close() {
+    this.dialogRef.close(false);
+  }
 
+  async save() {
+    await addDoc(this.colRef,this.fg.value);
+    this.dialogRef.close(true);
   }
 }
